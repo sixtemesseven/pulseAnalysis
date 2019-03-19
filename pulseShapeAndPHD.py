@@ -12,70 +12,60 @@ The filter is modeled after the "Trapezoidal Filter" described in: https://www.s
 
 import random
 import matplotlib.pyplot as plt
-import numpy
+import numpy as np
 import scipy.signal
+from scipy.stats import binned_statistic
 
-
-#Get data
-file = open("simulatedData.txt", "r")
-data = []
-for lines in file:
-    data.append(float(file.readline()))
-plt.plot(data)
-file.close()
+'''
+file = open(dataFile, 'r')
+data = file.read()
+data = data.split(',')
+for i in range(len(data)):
+    data[i] = float(data[i])
+    '''
     
-#Filter Parameters
-L = 50 #L*1/sampleFrequency correspons to deltaTl
-G = 50 #Seperation Gap
-lowReject = 0.1 #Zeros everyting below this value
-#Filter Calculations
-lenghtToFilter = len(data) - L*2 - G*2
-fData = []
-#Calculate mov average and offset mov average
-for i in range(lenghtToFilter):
-    sumL1 = 0
-    sumL2 = 0
-    for j in range(L):
-        sumL1 += data[i+j]
-        sumL2 += data[L+G+i+j]
-    Vav1 = (1/L)*sumL1
-    Vav2 = (1/L)*sumL2
-    Vout = Vav2-Vav1
-    #Get rid of negative overshoot
-    if(Vout < lowReject):
-        Vout = 0
-    fData.append(Vout)
+data = [] 
+for i in range(1000):
+    data.append(0)
+for i in range(10000):
+    data.append(1)
+
 
 '''
-#Pulse Hight detection via local Maxima
-peaksPos = scipy.signal.find_peaks(fData)
-peaksPos = numpy.ndarray.tolist(peaksPos[0])
-plt.plot(fData, '-gD', markevery=peaksPos)
-'''
+triangle = []
+st = A / F
+for i in range(F):
+    triangle.append((i+1)*st)
+for i in range(T):
+    triangle.append(A)
+for i in range(F):
+    triangle.append(A-(i+1)*st)
+    '''
 
-#Pulse High detection via if loops
-isRising = False
-isFalling = True
-peakPos = []
+triangle = scipy.signal.triang(1000)
+
+#Convolute with triangle / trap
+#fData = scipy.signal.convolve(data, triangle) /sum(triangle)
+fData = np.convolve(data, triangle) / sum(triangle)
+
+#Pulse hight via scipy
+distance = 0 #Minimum peak seperation 
+peakPos = scipy.signal.find_peaks(fData, distance=500)[0]
 peakVal = []
-for k in range(len(fData)-1):
-    #Peak
-    if(fData[k]>fData[k+1] and isRising==True and isFalling==False):
-        peakPos.append(k)
-        peakVal.append(fData[k])
-        isRising == False
-        isFalling == True
-    #Has fallen to 0, expect new peak
-    if(fData[k] == 0):
-        isFalling = False
-    #Value rises again, expect new peak
-    if(fData[k]<fData[k+1] and isFalling==False):
-        isRising = True    
-        
-print(peakPos)
+for i in range(len(peakPos)):
+    peakVal.append(fData[peakPos[i]])
+
+#Bin results
+binned = numpy.histogram(peakVal, bins=100, range=(0,10))
+
+#Clear old Plots
+plt.cla()
+#Data Plots
 plt.plot(fData)
-        
-    
+plt.plot(data)
+plt.plot(triangle)
+#plt.plot(binned[0]) #Print Histogram
+
         
         
     
