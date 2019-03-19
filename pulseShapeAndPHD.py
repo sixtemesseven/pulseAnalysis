@@ -14,58 +14,77 @@ import random
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.signal
-from scipy.stats import binned_statistic
 
-'''
-file = open(dataFile, 'r')
+
+#Get data
+#file = open("simulatedData.txt", "r")
+file = open("1msp.txt", "r")
+data = []
 data = file.read()
 data = data.split(',')
 for i in range(len(data)):
     data[i] = float(data[i])
-    '''
+file.close()
     
-data = [] 
-for i in range(1000):
-    data.append(0)
-for i in range(10000):
-    data.append(1)
+#Filter Parameters
+L = 100 #L*1/sampleFrequency correspons to deltaTl
+G = 0 #Seperation Gap
+lowReject = 0.3 #Zeros everyting below this value
+#Filter Calculations
+lenghtToFilter = len(data) - L*2 - G*2
+fData = []
+#Calculate mov average and offset mov average
+for i in range(lenghtToFilter):
+    sumL1 = 0
+    sumL2 = 0
+    for j in range(L):
+        sumL1 += data[i+j]
+        sumL2 += data[L+G+i+j]
+    Vav1 = (1/L)*sumL1
+    Vav2 = (1/L)*sumL2
+    Vout = Vav1-Vav2
+    #Get rid of negative overshoot
+    if(Vout < lowReject):
+        Vout = 0
+    fData.append(Vout)
 
+
+
+peakPosN = scipy.signal.find_peaks(fData, distance=100)[0]
+
+peakVal = []
+peakPos = []
+for i in range(len(peakPosN)):
+    peakVal.append(fData[peakPosN[i]])
+    peakPos.append(int(peakPosN[i]))
 
 '''
-triangle = []
-st = A / F
-for i in range(F):
-    triangle.append((i+1)*st)
-for i in range(T):
-    triangle.append(A)
-for i in range(F):
-    triangle.append(A-(i+1)*st)
-    '''
-
-triangle = scipy.signal.triang(1000)
-
-#Convolute with triangle / trap
-#fData = scipy.signal.convolve(data, triangle) /sum(triangle)
-fData = np.convolve(data, triangle) / sum(triangle)
-
-#Pulse hight via scipy
-distance = 0 #Minimum peak seperation 
-peakPos = scipy.signal.find_peaks(fData, distance=500)[0]
-peakVal = []
-for i in range(len(peakPos)):
-    peakVal.append(fData[peakPos[i]])
-
-#Bin results
-binned = numpy.histogram(peakVal, bins=100, range=(0,10))
-
-#Clear old Plots
+#Debug Print filtered with marked peaks    
 plt.cla()
-#Data Plots
-plt.plot(fData)
+plt.plot(fData, markevery=peakPos, marker='x')
 plt.plot(data)
-plt.plot(triangle)
-#plt.plot(binned[0]) #Print Histogram
+'''
 
+bins = 100
+low = 0
+high = 2
+hist = np.histogram(peakVal, bins=bins, range=(low,high))[0]
+xAxis = []
+Abins = []
+every = 20
+for i in range(int(bins/every)):
+    xAxis.append((high-low)/bins*i*every)
+    Abins.append(i*every)
+
+
+#plt.plot(fData)
+print(peakVal)
+plt.xticks(Abins, xAxis)
+plt.plot(hist)
+
+
+
+    
         
         
     

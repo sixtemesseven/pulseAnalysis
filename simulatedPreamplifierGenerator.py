@@ -20,8 +20,8 @@ file = open("simulatedData.txt", "w")
 samples = 10000 #lenght of simulated file
 
 noiseFactor = 0.00 #Higher increases noise, set zero to disable
-decayFactor = 0.003 #Higher decays quicker
-eventProbability = 0.9995 #Lower is more probable
+decayFactor = 0.008 #Higher decays quicker
+eventProbability = 0.9999 #Lower is more probable
 preampSaturation = 5 #Max Value before preamp saturates
 randomHight = False #Random pulse Hights 
 
@@ -36,11 +36,11 @@ for i in range(samples):
     if(random.randint(0,1000) > (eventProbability*1000)):
         if randomHight == True:
             #events sets stepness of rising flank (linear rise)
-            event = 25
+            event = 2
             eventAmpStep = random.randint(1, 1000)/(1000*25)
         else:
             event = 2
-            eventAmpStep = 0.01
+            eventAmpStep = 0.1
     #If an event is occuring add linear rise
     if(event > 0):
         v += eventAmpStep
@@ -53,7 +53,8 @@ for i in range(samples):
     #Catch negative voltage (simulated preamplifier us pulled to ground)
     if(v < 0):
         v = 0
-    data.append(v)       
+    data.append(v)     
+    
     
 #Add withe noise    
 data += numpy.random.normal(0, noiseFactor, size=samples)
