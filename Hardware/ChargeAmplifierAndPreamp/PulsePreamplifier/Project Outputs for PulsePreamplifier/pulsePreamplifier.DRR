@@ -1,0 +1,18 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: pulsePreamplifier.PcbDoc   25/06/2019  23:42:54
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : pulsePreamplifier.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      12mil (0.3mm)                                             Round             193       PTH        0.00inch (0.00mm)
+T2      28mil (0.711mm)                                           Round             2         PTH        0.00inch (0.00mm)
+T3      32mil (0.8mm)                                             Round             6         PTH        0.00inch (0.00mm)
+T4      47mil (1.19mm)                                            Round             6         PTH        0.00inch (0.00mm)
+T5      130mil (3.3mm)                                            Round             4         PTH        0.00inch (0.00mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              211
+
+Total Processing Time (hh:mm:ss) : 00:00:00

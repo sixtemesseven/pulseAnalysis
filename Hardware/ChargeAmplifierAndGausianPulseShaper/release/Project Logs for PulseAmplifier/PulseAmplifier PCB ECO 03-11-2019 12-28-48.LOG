@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GND Pin=GND_4_RC1-1
+Removed Pin From Net: NetName=GND Pin=GND_4_RC2-1
+Removed Pin From Net: NetName=GND Pin=GND_4_RC3-1
+Removed Pin From Net: NetName=GND Pin=GND_4_RC4-1
+Removed Member From Class: ClassName=RC1 Member=GND_4_RC1
+Removed Member From Class: ClassName=RC2 Member=GND_4_RC2
+Removed Member From Class: ClassName=RC3 Member=GND_4_RC3
+Removed Member From Class: ClassName=RC4 Member=GND_4_RC4

@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [PulsePreamplifier.PrjPcb]
+   Generated File[pulsePreamplifier.TXT]
+   Generated File[pulsePreamplifier.LDP]
+   Generated File[pulsePreamplifier.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 23:42:54 On 25/06/2019

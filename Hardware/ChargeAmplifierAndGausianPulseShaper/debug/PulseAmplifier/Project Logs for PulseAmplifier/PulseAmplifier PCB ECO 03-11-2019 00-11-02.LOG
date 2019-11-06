@@ -1,0 +1,19 @@
+Added Component: Designator=C28(PNSC-ECA-1HM470)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1047.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "ECA-1HM470"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "ECA-1HM470"; VariantName = "[No Variations]"
+Added Component: Designator=C29(PNSC-ECA-1HM470)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1047.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "ECA-1HM470"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "ECA-1HM470"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C22-2
+Added Pin To Net: NetName=+5V Pin=C28-1
+Added Pin To Net: NetName=GND Pin=C28-2
+Added Pin To Net: NetName=GND Pin=C29-1
+Added Pin To Net: NetName=-5V Pin=C29-2
+Added Member To Class: ClassName=Power Member=Component C28 ECA-1HM470
+Added Member To Class: ClassName=Power Member=Component C29 ECA-1HM470
