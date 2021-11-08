@@ -1,0 +1,6 @@
+Change Component Comment : Designator=R2 Old Comment=100 New Comment=0
+Change Component Comment : Designator=R4 Old Comment=100k New Comment=open
+Added Room: Name=CPA
+Added Room: Name=CR
+Added Room: Name=Power
+Added Room: Name=pulseAmplifier

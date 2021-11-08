@@ -1,0 +1,21 @@
+Circuit: * D:\Github\pulseAnalysis\Hardware\ChargeAmplifierAndGausianPulseShaper\Simulations\Draft3.asc
+
+.OP point found by inspection.
+
+Date: Tue Feb 18 23:12:54 2020
+Total elapsed time: 0.031 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2120
+traniter = 2120
+tranpoints = 1061
+accept = 1057
+rejected = 4
+matrix size = 2
+fillins = 0
+solver = Normal
+Matrix Compiler1: 36 bytes object code size  0.0/0.0/[0.0]
+Matrix Compiler2: 96 bytes object code size  0.0/0.0/[0.0]
+

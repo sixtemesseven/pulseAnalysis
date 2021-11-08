@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=GND Pin=J1-MP
+Removed Pin From Net: NetName=GND Pin=J1-MP
+Removed Pin From Net: NetName=GND Pin=J1-MP
+Removed Pin From Net: NetName=GND Pin=J1-MP
+Removed Member From Class: ClassName=pulsePreamplifier Member=J1
+Added Pin To Net: NetName=INPUT Pin=U1-2
+Added Net: Name=INPUT

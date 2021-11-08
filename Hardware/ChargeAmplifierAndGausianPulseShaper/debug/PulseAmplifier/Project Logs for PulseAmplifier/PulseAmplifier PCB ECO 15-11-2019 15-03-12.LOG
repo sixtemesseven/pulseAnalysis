@@ -1,0 +1,124 @@
+Removed Pin From Net: NetName=NetR7_1 Pin=U3_RC1-4
+Removed Pin From Net: NetName=NetR8_RC1_2 Pin=U3_RC2-4
+Removed Pin From Net: NetName=NetR8_RC2_2 Pin=U3_RC3-4
+Removed Pin From Net: NetName=NetR8_RC3_2 Pin=U3_RC4-4
+Added Component: Designator=C20(CAPC0805(2012)145_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Thickness"; Value = "1.45 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "25 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Added Component: Designator=C26(CAPC0805(2012)145_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Thickness"; Value = "1.45 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "25 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Added Component: Designator=R9_RC1(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R9_RC2(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R9_RC3(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R9_RC4(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R10_RC1(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R10_RC2(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R10_RC3(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R10_RC4(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100.00 Ohm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C20-1
+Added Pin To Net: NetName=+5V Pin=C20-2
+Added Pin To Net: NetName=GND Pin=C26-1
+Added Pin To Net: NetName=-5V Pin=C26-2
+Added Pin To Net: NetName=GND Pin=R9_RC1-1
+Added Pin To Net: NetName=GND Pin=R9_RC2-1
+Added Pin To Net: NetName=GND Pin=R9_RC3-1
+Added Pin To Net: NetName=GND Pin=R9_RC4-1
+Added Pin To Net: NetName=NetR7_1 Pin=R10_RC1-1
+Added Pin To Net: NetName=NetR8_RC1_2 Pin=R10_RC2-1
+Added Pin To Net: NetName=NetR8_RC2_2 Pin=R10_RC3-1
+Added Pin To Net: NetName=NetR8_RC3_2 Pin=R10_RC4-1
+Added Pin To Net: NetName=NetR9_RC1_2 Pin=R9_RC1-2
+Added Pin To Net: NetName=NetR9_RC1_2 Pin=R10_RC1-2
+Added Pin To Net: NetName=NetR9_RC1_2 Pin=U3_RC1-4
+Added Net: Name=NetR9_RC1_2
+Added Pin To Net: NetName=NetR9_RC2_2 Pin=R9_RC2-2
+Added Pin To Net: NetName=NetR9_RC2_2 Pin=R10_RC2-2
+Added Pin To Net: NetName=NetR9_RC2_2 Pin=U3_RC2-4
+Added Net: Name=NetR9_RC2_2
+Added Pin To Net: NetName=NetR9_RC3_2 Pin=R9_RC3-2
+Added Pin To Net: NetName=NetR9_RC3_2 Pin=R10_RC3-2
+Added Pin To Net: NetName=NetR9_RC3_2 Pin=U3_RC3-4
+Added Net: Name=NetR9_RC3_2
+Added Pin To Net: NetName=NetR9_RC4_2 Pin=R9_RC4-2
+Added Pin To Net: NetName=NetR9_RC4_2 Pin=R10_RC4-2
+Added Pin To Net: NetName=NetR9_RC4_2 Pin=U3_RC4-4
+Added Net: Name=NetR9_RC4_2
+Added Member To Class: ClassName=CPA Member=Component C20 10uF X7R 10V 0805
+Added Member To Class: ClassName=CPA Member=Component C26 10uF X7R 10V 0805
+Added Member To Class: ClassName=RC1 Member=Component R9_RC1 (R9) 1k
+Added Member To Class: ClassName=RC2 Member=Component R9_RC2 (R9) 1k
+Added Member To Class: ClassName=RC3 Member=Component R9_RC3 (R9) 1k
+Added Member To Class: ClassName=RC4 Member=Component R9_RC4 (R9) 1k
+Added Member To Class: ClassName=RC1 Member=Component R10_RC1 (R10) 1k
+Added Member To Class: ClassName=RC2 Member=Component R10_RC2 (R10) 1k
+Added Member To Class: ClassName=RC3 Member=Component R10_RC3 (R10) 1k
+Added Member To Class: ClassName=RC4 Member=Component R10_RC4 (R10) 1k

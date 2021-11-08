@@ -1,0 +1,48 @@
+Removed Pin From Net: NetName=GND Pin=C11-1
+Removed Pin From Net: NetName=GND Pin=C21-1
+Removed Pin From Net: NetName=-9V Pin=C21-2
+Removed Pin From Net: NetName=+9V Pin=L1-1
+Removed Pin From Net: NetName=NetC10_2 Pin=L1-2
+Removed Pin From Net: NetName=-9V Pin=L2-2
+Removed Pin From Net: NetName=NetC12_2 Pin=U2-2
+Change Component Footprint: Designator=C10 Old Footprint=CAPC0603(1608)100_N New Footprint=CAPC1206(3216)190_N
+Change Component Footprint: Designator=U2 Old Footprint=M08A_L New Footprint=SOIC-OA8_N
+Change Component Comment : Designator=C11 Old Comment=1uF New Comment=opt
+Change Component Comment : Designator=C21 Old Comment=100nF New Comment=1uF
+Change Component Comment : Designator=C10 Old Comment=100nF New Comment=10uF
+Change Component Comment : Designator=U4 Old Comment=LM337IMPX New Comment=i4 -- LM337IMPX
+Change Component Comment : Designator=U2 Old Comment=LMC7660IMX/NOPB New Comment=TC1044SEOA713
+Change Component Comment : Designator=U1 Old Comment=OPA659IDBVT New Comment=i11 -- OPA659IDBVT
+Change component parameters: Designator = "C10"; Footprint = "CAPC1206(3216)190_N"; UniqueID = "\BOGRZFTH"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Case-EIA"; Value = "1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case-Metric"; Value = "3216"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Thickness"; Value = "1.9 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage"; Value = "25 V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "±20%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "4.7uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U2"; Footprint = "SOIC-OA8_N"; UniqueID = "\GTUMYTLW"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Code_IPC"; Value = "SOIC127P600-8"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DatasheetVersion"; Value = "revA, Oct-2002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "8-Lead Plastic Small Outline (OA) - Narrow, 3.90mm Body [SOIC]"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "SOIC-OA8"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageVersion"; Value = "revBB, Aug-2009"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=NetC12_2 Pin=C20-2
+Added Pin To Net: NetName=NetC12_2 Pin=L1-1
+Added Pin To Net: NetName=-9V Pin=L1-2
+Added Pin To Net: NetName=+9V Pin=L2-1
+Added Pin To Net: NetName=NetC10_2 Pin=L2-2
+Added Pin To Net: NetName=NetC12_2 Pin=U2-5
+Added Pin To Net: NetName=GND Pin=U2-6
+Added Pin To Net: NetName=NetC11_1 Pin=C11-1
+Added Pin To Net: NetName=NetC11_1 Pin=U2-7
+Added Net: Name=NetC11_1
+Added Pin To Net: NetName=NetC21_1 Pin=C21-1
+Added Pin To Net: NetName=NetC21_1 Pin=U2-2
+Added Net: Name=NetC21_1
+Added Pin To Net: NetName=NetC21_2 Pin=C21-2
+Added Pin To Net: NetName=NetC21_2 Pin=U2-4
+Added Net: Name=NetC21_2
